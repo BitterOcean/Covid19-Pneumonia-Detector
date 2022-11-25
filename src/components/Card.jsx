@@ -15,6 +15,7 @@ const MediaCard = (props) => {
     cardContentHeader,
     cardContentBody1,
     cardContentBody2,
+    cardContentBody3,
   } = props;
   return (
     <Card sx={{ maxWidth: 500 }}>
@@ -35,6 +36,9 @@ const MediaCard = (props) => {
         </Typography>
         <Typography variant="body2" color="text.secondary">
           { cardContentBody2 }
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          { cardContentBody3 }
         </Typography>
       </CardContent>
     </Card>
