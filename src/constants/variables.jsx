@@ -1,0 +1,12 @@
+export const HEADER_TITLE = 'Diagnosis of Covid-19 & Pneumonia';
+export const COPYRIGHT_FORMALITY = 'All the rights reserved';
+export const DEVELOPER_NAME = 'Maryam Saeidmehr';
+export const LANDING_CONTENT_TITLE = 'Covid-19 & Pneumonia Detector';
+export const LANDING_CONTENT_DESCRIBTION = 'A Deep Learning Model Based on the DenseNet121 Architecture';
+export const DROPZONETEXT = 'Drag and drop an X-ray here or Click';
+export const BUTTON_TITLE = 'Predict';
+export const CARDIMGALT = 'X-ray Image';
+export const CARDCONTENTHEATHER = 'The Probabilities :';
+export const ABOUT_ME_LINK = 'https://MaryamSaeedmehr.github.io';
+export const COLAB_LINK = 'https://colab.research.google.com/drive/1z7Czn3H4kUxLxzVG5PjhQqZ_FJrtuoT5?usp=sharing';
+export const SNACKBAR_ERROR = 'Uploading a X-ray image is required';
