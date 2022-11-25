@@ -8,7 +8,8 @@
 
 | . | . |
 | - | - |
-| ![Covid19DetectorLandingPage](https://user-images.githubusercontent.com/60509979/194156486-b84abf8b-5c78-427d-94bf-1bb696f2f386.png) | ![Covid19DetectorResultShow](https://user-images.githubusercontent.com/60509979/194156563-14d3a535-28ed-450c-9e71-f01e70cf020b.png) |
+| ![front1](https://user-images.githubusercontent.com/60509979/204002062-7dfd112a-0fd0-4b27-bb7c-ddec9db93f54.png) | ![front2](https://user-images.githubusercontent.com/60509979/204002158-c3af6b07-095e-4a39-a800-f0afd79817ec.png) |
+
 
 
 In this project, I have a Django-React Web App which can detect COVID-19 & Pneumonia from cheast X-ray Images.
@@ -31,13 +32,14 @@ In this project, I have a Django-React Web App which can detect COVID-19 & Pneum
 
 | .        | Covid | Pneumonia | Normal | 
 | -------- | ----- | --------- | ------ |
-| Dataset  | images|  images   | images | 
-| samples  |  | | |
+| Dataset  | 576 images | 4273 images   | 1583 images | 
+| samples  | ![covid](https://user-images.githubusercontent.com/60509979/204002968-54cd1b09-29f6-4fa5-a57b-b30a63a9ac93.png) | ![pneumonia](https://user-images.githubusercontent.com/60509979/204003040-80253b80-5938-4681-928c-8d725dc8570d.png) | ![normal](https://user-images.githubusercontent.com/60509979/204003088-35697c90-1ec0-49bb-b65c-b7fcc1661457.png) |
 
 
-| Train Set (%) | Validation Set (%) |
+
+| Train Set (80%) | Validation Set (20%) |
 | - | - |
-|  images |  images |
+| 5144 images | 1288 images |
 
  
 ## :mechanical_arm::robot: **Deep Learning Model**
@@ -53,7 +55,8 @@ this is the architecture of **DenseNet121**
 
 | Confusion Matrix | Accuracy Curve | Loss Curve |
 | - | - | - |
-|  |  |  |
+| ![cm](https://user-images.githubusercontent.com/60509979/204003200-08c56baf-4aa6-4efd-9026-8af95636136d.png) | ![acc](https://user-images.githubusercontent.com/60509979/204003236-bec5c3da-dbe2-47da-a21d-5b111b71b9aa.png) | ![loss](https://user-images.githubusercontent.com/60509979/204003287-a9dfdfe9-27bb-438f-9fe2-75910a5753cb.png) |
+
 
 <div align="center">
   <table style="width:70%;font-size:12pt;">
@@ -62,27 +65,27 @@ this is the architecture of **DenseNet121**
       <th style="text-align:center;">Sensitivity</th>
       <th style="text-align:center;">Specificity</th>
       <tr>
-        <td>$$ \frac{TP~+~TN}{TP~+~TN~+~FP~+~FN} $$</td>
-        <td>$$ \frac{TP}{TP~+~FN} $$</td>
-        <td>$$ \frac{TN}{TN~+~FP} $$</td>
+        <td style="text-align:center;font-size:13pt;">$$\frac{TP~+~TN}{TP~+~TN~+~FP~+~FN}$$</td>
+        <td style="text-align:center;font-size:13pt;">$$\frac{TP}{TP~+~FN}$$</td>
+        <td style="text-align:center;font-size:13pt;">$$\frac{TN}{TN~+~FP}$$</td>
       </tr>
       <tr>
           <td style="text-align:center;">Covid19</td>
-          <td style="text-align:center;">99.92%</td>
+          <td style="text-align:center;">99.76%</td>
+          <td style="text-align:center;">97.39%</td>
           <td style="text-align:center;">100%</td>
-          <td style="text-align:center;">99.91%</td>
       </tr>
       <tr>
           <td style="text-align:center;">Pneumonia</td>
-          <td style="text-align:center;">95.29%</td>
-          <td style="text-align:center;">96.36%</td>
-          <td style="text-align:center;">93.03%</td>
+          <td style="text-align:center;">95.04%</td>
+          <td style="text-align:center;">95.91%</td>
+          <td style="text-align:center;">93.33%</td>
       </tr>
       <tr>
           <td style="text-align:center;">Normal</td>
-          <td style="text-align:center;">95.37%</td>
-          <td style="text-align:center;">90.68%</td>
-          <td style="text-align:center;">96.92%</td>
+          <td style="text-align:center;">94.96%</td>
+          <td style="text-align:center;">91.25%</td>
+          <td style="text-align:center;">96.19%</td>
       </tr>
   </table>
 </div>
